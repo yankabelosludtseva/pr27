@@ -126,6 +126,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Cinema.cs" />
+    <Compile Include="Models\Poster.cs" />
     <Compile Include="Pages\Cinema.xaml.cs">
       <DependentUpon>Cinema.xaml</DependentUpon>
     </Compile>
