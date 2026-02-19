@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:пр_27"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Управление кинотеатрами" Height="600" Width="900">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="Blue" Margin="10">
+            <Button x:Name="btnCinemas" 
+                    Content="Кинотеатры" 
+                    Width="120" Height="35" 
+                    Margin="5"
+                    Background="White"
+                    Click="btnCinemas_Click"/>
+            <Button x:Name="btnPosters" 
+                    Content="Афиша" 
+                    Width="120" Height="35" 
+                    Margin="5"
+                    Background="White"
+                    Click="btnPosters_Click"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
